@@ -4,7 +4,8 @@
   "description": "A lightweight lib to work with query strings (1kb uglified)",
   "main": "query-object.js",
   "scripts": {
-    "test": "nyc ava"
+    "test": "nyc ava",
+    "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,9 @@
   "homepage": "https://github.com/fernandofleury/query-object",
   "devDependencies": {
     "ava": "^0.14.0",
+    "babel-eslint": "^6.0.2",
+    "codecov": "^1.0.1",
+    "eslint": "^2.7.0",
     "nyc": "^6.4.0"
   }
 }
